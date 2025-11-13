@@ -1,9 +1,19 @@
 import readlinesync = require("readline-sync");
 import { colors } from './src/util/Colors';
+import { Produto } from './src/model/Produto';
 
 export function main() {
 
     let opcao: number;
+
+    const produto: Produto = new Produto(1, "Camiseta Regata Algodão", 79.90, 1, 10);
+    produto.visualizar();
+    produto.vender(1);
+    produto.visualizar();
+    produto.reposicao(1);
+    produto.visualizar();
+
+    
 
     while (true) {
 
