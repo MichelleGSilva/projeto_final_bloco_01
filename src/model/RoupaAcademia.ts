@@ -33,7 +33,7 @@ export class RoupaAcademia extends Produto {
         }
 
         this.estoque = this.estoque - quantidade
-        console.log("Venda Realizada: ${quantidade} unidade(s) de ${this.nome}")
+        console.log(`Venda Realizada: ${quantidade} unidade(s) de ${this.nome}`)
         return true
     }
 
