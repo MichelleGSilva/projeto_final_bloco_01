@@ -1,4 +1,5 @@
 import readlinesync = require("readline-sync");
+import { colors } from './src/util/Colors';
 
 export function main() {
 
@@ -6,7 +7,8 @@ export function main() {
 
     while (true) {
 
-        console.log("*****************************************************");
+        console.log(colors.bg.white, colors.fg.redstrong,
+                    "*****************************************************");
         console.log("                                                     ");
         console.log("          CROSSFITERS - ROUPAS DE ACADEMIA           ");
         console.log("                                                     ");
@@ -19,41 +21,49 @@ export function main() {
         console.log("            5 - Apagar um Produto                    ");
         console.log("            6 - Sair                                 ");
         console.log("*****************************************************");
-        console.log("                                                     ");
+        console.log("                                                     ",
+        colors.reset);
 
         console.log("Entre com a opção desejada: ");
         opcao = readlinesync.questionInt("");
 
         if (opcao == 6) {
-            console.log("\nCROSSFITERS - Obrigado(a) por usar nosso sistema!");
+            console.log(colors.fg.redstrong,"\nCROSSFITERS - Obrigado(a) por usar nosso sistema!");
             sobre();
+            console.log(colors.reset, "");
             process.exit(0);
         }
 
         switch (opcao) {
             case 1:
-                console.log("\n\nCadastrar Produto\n\n");
+                console.log(colors.fg.yellowstrong,"\n\nCadastrar Produto\n\n", colors.reset);
 
+                keyPress()
                 break;
             case 2:
-                console.log("\n\nListar todos os Produtos\n\n");
+                console.log(colors.fg.yellowstrong, "\n\nListar todos os Produtos\n\n", colors.reset);
 
+                keyPress()
                 break;
             case 3:
-                console.log("\n\nBuscar produto por ID\n\n");
+                console.log(colors.fg.yellowstrong, "\n\nBuscar produto por ID\n\n", colors.reset);
 
+                keyPress()
                 break;
             case 4:
-                console.log("\n\nAtualizar dados do Produto\n\n");
+                console.log(colors.fg.yellowstrong, "\n\nAtualizar dados do Produto\n\n", colors.reset);
 
+                keyPress()
                 break;
             case 5:
-                console.log("\n\nApagar um Produto\n\n");
+                console.log(colors.fg.yellowstrong, "\n\nApagar um Produto\n\n", colors.reset);
 
+                keyPress()
                 break;
             default:
-                console.log("\nOpção Inválida!\n");
+                console.log(colors.fg.yellowstrong, "\nOpção Inválida!\n", colors.reset);
 
+                keyPress()
                 break;
         }
     }
@@ -67,6 +77,13 @@ export function sobre(): void {
     console.log("Generation Brasil - michelles@genstudents.org");
     console.log("https://github.com/MichelleGSilva");
     console.log("*****************************************************");
+}
+
+
+function keyPress(): void {
+    console.log(colors.reset, "");
+    console.log("\nPressione enter para continuar...");
+    readlinesync.prompt();
 }
 
 main();
