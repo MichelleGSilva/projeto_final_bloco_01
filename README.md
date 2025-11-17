@@ -4,16 +4,22 @@
 
 ## 🧐 Sobre o projeto
   
-Este projeto é uma aplicação web de e-commerce desenvolvida com TypeScript, que simula um sistema de loja online. Os usuários podem navegar por produtos, adicionar ao carrinho, ver detalhes, etc.
+Este projeto é um sistema administrativo de e-commerce desenvolvido em TypeScript, focado no gerenciamento interno da loja.
+A aplicação funciona por meio de um menu interativo no terminal, permitindo ao administrador realizar operações essenciais de gerenciamento.
 
 Principais objetivos:
 
-- Criar uma interface responsiva para catálogo de produtos  
-- Implementar funcionalidade de carrinho de compras  
-- Praticar conceitos de programação como modularização, rotas, estado, etc  
+- Desenvolver um sistema administrativo para gerenciamento de produtos do e-commerce;
+- Implementar funcionalidades de cadastro, consulta, atualização e exclusão de itens;
+- Controlar estoque, registrar vendas e permitir reposição de produtos;
+- Praticar conceitos de programação como orientação a objetos, modularização, controllers e manipulação de dados em TypeScript;
+- Aplicar lógica de fluxo, tratamento de entradas e interação via menu no terminal.
 
 ## 💻 Tecnologias utilizadas
 
-- **TypeScript** — para tipagem forte    
-- **Node.js** — para backend ou scripts  
-
+- TypeScript — para tipagem estática e organização orientada a objetos
+- Node.js — para execução do código no ambiente backend
+- readline-sync — para interação com o usuário via terminal
+- ts-node — para executar arquivos .ts diretamente
+- Nodemon — para facilitar o desenvolvimento
+- Módulos internos — controllers, models, utils, etc.
