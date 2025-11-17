@@ -17,9 +17,9 @@ A aplicação funciona por meio de um menu interativo no terminal, permitindo ao
 
 ## 💻 Tecnologias utilizadas
 
-- TypeScript — para tipagem estática e organização orientada a objetos
-- Node.js — para execução do código no ambiente backend
-- readline-sync — para interação com o usuário via terminal
-- ts-node — para executar arquivos .ts diretamente
-- Nodemon — para facilitar o desenvolvimento
-- Módulos internos — controllers, models, utils, etc.
+- **TypeScript** — para tipagem estática e organização orientada a objetos
+- **Node.js** — para execução do código no ambiente backend
+- **readline-sync** — para interação com o usuário via terminal
+- **ts-node** — para executar arquivos .ts diretamente
+- **Nodemon** — para facilitar o desenvolvimento
+- **Módulos internos** — controllers, models, utils, etc.
