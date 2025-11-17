@@ -7,7 +7,7 @@
 Este projeto é um sistema administrativo de e-commerce desenvolvido em TypeScript, focado no gerenciamento interno da loja.
 A aplicação funciona por meio de um menu interativo no terminal, permitindo ao administrador realizar operações essenciais de gerenciamento.
 
-Principais objetivos:
+## 🎯 Principais objetivos
 
 - Desenvolver um sistema administrativo para gerenciamento de produtos do e-commerce;
 - Implementar funcionalidades de cadastro, consulta, atualização e exclusão de itens;
